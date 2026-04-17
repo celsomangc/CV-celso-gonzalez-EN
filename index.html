@@ -3,97 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV – Celso Manuel González Collado</title>
+    <title>Professional Portfolio – Celso Manuel González Collado</title>
+
     <style>
+        /* Global */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f7f9fc;
+            color: #2b2b2b;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 40px;
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #1a365d;
         }
-        h1, h2 {
-            color: #003366;
-        }
+
         h2 {
-            border-bottom: 2px solid #003366;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 6px;
+            margin-top: 50px;
         }
-        .section {
-            margin-bottom: 25px;
+
+        p, li {
+            line-height: 1.6;
         }
-        ul {
-            margin-top: 5px;
-        }
-        .contact {
-            background: #003366;
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 100%;
+            background: #1a365d;
             color: white;
-            padding: 20px;
+            padding: 40px 25px;
+            box-sizing: border-box;
+            border-right: 3px solid #0f223d;
         }
-        .contact a {
-            color: #a8d0ff;
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #d7e6ff;
+            text-decoration: none;
+            margin: 14px 0;
+            font-size: 16px;
+            padding: 6px 0;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: #ffffff;
+            padding-left: 4px;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 300px;
+            padding: 50px;
+            max-width: 900px;
+        }
+
+        /* Cards for sections */
+        .section-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-right: none;
+            }
+            .content {
+                margin-left: 0;
+                padding: 25px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="contact">
-    <h1>Celso Manuel González Collado</h1>
-    <p>Email: <a href="mailto:celso.gonzalezcollado@gmail.com">celso.gonzalezcollado@gmail.com</a></p>
-    <p>Phone: +34 646 684 535</p>
-    <p>ORCID: <a href="https://orcid.org/0000-0003-2447-019X">0000-0003-2447-019X</a></p>
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Celso M. González</h2>
+    <a href="#cv">CV</a>
+    <a href="#cover">Cover Letter</a>
+    <a href="#degrees">Degrees</a>
+    <a href="#certifications">Certifications</a>
 </div>
 
-<div class="container">
+<!-- Main Content -->
+<div class="content">
 
-    <h2>Summary</h2>
-    <p>Physicist and computational scientist with experience in Python, Fortran, Linux, Shell Scripting, MATLAB, git, and high-performance computing (HPC), with a strong problem-solving mindset through analytical and critical thinking. Over the past years, I have developed numerical models, complex simulations, and data analysis workflows in advanced scientific environments. I have experience leading projects and collaborating in international teams across multiple disciplines.</p>
+    <h1>Professional Portfolio</h1>
 
-    <h2>Professional Experience</h2>
-    <div class="section">
-        <h3>PhD Researcher in Computational Modelling — Universidad Autónoma de Madrid (2021–Present)</h3>
+    <!-- CV SECTION -->
+    <section id="cv" class="section-card">
+        <h2>Curriculum Vitae</h2>
+
+        <h3>Summary</h3>
+        <p>Physicist and computational scientist with experience in Python, Fortran, Linux, Shell Scripting, MATLAB, git, and high-performance computing (HPC). Skilled in numerical modelling, scientific software development, and advanced simulations in optical and molecular physics. Experienced in international collaboration, project leadership, and academic dissemination.</p>
+
+        <h3>Professional Experience</h3>
         <ul>
-            <li>Development of cutting-edge simulations in optical and molecular physics, executed on world-class supercomputers such as MareNostrum 5 (BSC) and the Scientific Computing Center at UAM.</li>
-            <li>Strong use of Linux environments, SSH/SCP, SLURM, Lmod, MPI, OpenMP, and HPC best practices.</li>
-            <li>Scientific software development in collaboration with Stanford University, including a 3‑month research stay in California.</li>
-            <li>Programming in Python, MATLAB, Shell Scripting, and Fortran for modelling, automation, and HPC optimization.</li>
-            <li>Publication of scientific articles and presentations at international conferences (Vigo, Washington APS DAMOP 2023 award).</li>
-            <li>Teaching experience in Physics and Chemistry degrees at UAM.</li>
+            <li><strong>PhD Researcher in Computational Modelling</strong> — Universidad Autónoma de Madrid (2021–Present)</li>
+            <li>Development of large-scale simulations on supercomputers (MareNostrum 5, UAM clusters).</li>
+            <li>Advanced use of Linux, SSH/SCP, SLURM, Lmod, MPI, OpenMP.</li>
+            <li>Scientific software development with Stanford University (3‑month research stay).</li>
+            <li>Publications in high-impact journals and presentations at international conferences (APS DAMOP 2023 award).</li>
+            <li>Teaching experience in Physics and Chemistry degrees.</li>
         </ul>
-    </div>
 
-    <h2>Education</h2>
-    <ul>
-        <li><strong>PhD in Theoretical Chemistry and Computational Modelling</strong>, UAM (June 2026)</li>
-        <li><strong>Master’s Degree in Theoretical Physics</strong>, UCM — Score: 9.39/10 (2020)</li>
-        <li><strong>Bachelor’s Degree in Physics</strong>, UCM — Score: 9.22/10 (2019)</li>
-        <li><strong>Professional Music Degree (Oboe)</strong>, Conservatorio Joaquín Turina (2015)</li>
-    </ul>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li><strong>Programming:</strong> Python, Shell Script, Fortran, MATLAB</li>
+            <li><strong>Technologies:</strong> Linux, HPC, Git, LaTeX, VSCode</li>
+            <li><strong>Expertise:</strong> Modelling, simulation, data analysis, optimization</li>
+            <li><strong>Languages:</strong> Spanish (Native), English (Advanced)</li>
+        </ul>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Programming:</strong> Python (NumPy, SciPy, Pandas, Matplotlib), Shell Script, Fortran, MATLAB</li>
-        <li><strong>Technologies:</strong> Linux, HPC, Git, LaTeX, VSCode, Microsoft Office</li>
-        <li><strong>Expertise:</strong> Mathematical modelling, physical/chemical simulation, data analysis, computational optimization, scientific software development</li>
-        <li><strong>Languages:</strong> Spanish (Native), English (Advanced)</li>
-    </ul>
+        <h3>Scientific Publications</h3>
+        <ul>
+            <li>Physical Review A (2025)</li>
+            <li>Physical Review Research (2024)</li>
+            <li>Nature Physics (2024)</li>
+            <li>PCCP (2022)</li>
+        </ul>
+    </section>
 
-    <h2>Scientific Publications</h2>
-    <ul>
-        <li>J. Delgado, C. M. González-Collado, P. Decleva, A. Palacios & F. Martín, <em>Physical Review A</em> 111, 063107 (2025).</li>
-        <li>C. M. González-Collado et al., <em>Physical Review Research</em> 6, 033342 (2024).</li>
-        <li>V. Loriot et al., <em>Nature Physics</em> 20, 765–769 (2024).</li>
-        <li>C. M. González-Collado et al., <em>PCCP</em> 24, 7700 (2022).</li>
-    </ul>
+    <!-- COVER LETTER SECTION -->
+    <section id="cover" class="section-card">
+        <h2>Cover Letter</h2>
+
+        <p><em>Aquí puedes incluir tu cover letter completa. Si quieres, te la redacto con un estilo profesional adaptado a industria, academia o investigación.</em></p>
+
+        <p>Ejemplo de estructura profesional:</p>
+        <ul>
+            <li>Presentación y motivación</li>
+            <li>Experiencia relevante para el puesto</li>
+            <li>Contribución que puedes aportar</li>
+            <li>Alineación con la misión del equipo o empresa</li>
+            <li>Cierre formal y disponibilidad</li>
+        </ul>
+    </section>
+
+    <!-- DEGREES SECTION -->
+    <section id="degrees" class="section-card">
+        <h2>Degrees</h2>
+
+        <ul>
+            <li><strong>PhD in Theoretical Chemistry and Computational Modelling</strong>, UAM (June 2026)</li>
+            <li><strong>Master’s Degree in Theoretical Physics</strong>, UCM — Score: 9.39/10 (2020)</li>
+            <li><strong>Bachelor’s Degree in Physics</strong>, UCM — Score: 9.22/10 (2019)</li>
+            <li><strong>Professional Music Degree (Oboe)</strong>, Conservatorio Joaquín Turina (2015)</li>
+        </ul>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section-card">
+        <h2>Certifications</h2>
+
+        <p><em>Añade aquí certificaciones técnicas, cursos o diplomas relevantes.</em></p>
+
+        <ul>
+            <li>HPC Training (BSC)</li>
+            <li>Scientific Computing Workshops</li>
+            <li>Python for Research (MITx) — si aplica</li>
+            <li>Otros cursos relevantes</li>
+        </ul>
+    </section>
 
 </div>
 
 </body>
 </html>
+
