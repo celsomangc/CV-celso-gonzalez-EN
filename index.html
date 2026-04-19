@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,8 @@
 
         p, li {
             line-height: 1.6;
+            text-align: justify;
+            hyphens: auto;
         }
 
         /* Sidebar */
@@ -105,11 +107,10 @@
 
 <!-- Sidebar -->
 <div class="sidebar">
-    <h2>Celso M. González</h2>
-    <a href="#cv">CV</a>
-    <a href="#cover">Cover Letter</a>
-    <a href="#degrees">Degrees</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#cover">Cover letter</a>
+    <a href="#cv">Curriculum Vitae</a>
+    <a href="#degrees">Education</a>
+    <a href="#certifications">Certificates</a>
 </div>
 
 <!-- Main Content -->
@@ -135,14 +136,29 @@
             Celso Manuel González Collado
         </h1>
         <p style="margin: 6px 0 0 0; font-size: 16px; color: #444;">
-            Physicist · Computational Scientist · HPC Specialist
+            Physicist · HPC Engineer · Computational Scientist
         </p>
     </div>
 </div>
 
 <!-- DOWNLOAD BUTTONS -->
-<div style="margin-bottom: 40px;">
-    <a href="CV_Celso.pdf" download style="
+<div style="
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+">
+    <a href="Cover_letter.pdf" download style="
+        background: #1a365d;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 15px;
+    ">Download Cover Letter (PDF)</a>
+
+    <a href="CV_Celso_Gonzalez_EN.pdf" download style="
         background: #1a365d;
         color: white;
         padding: 12px 20px;
@@ -150,50 +166,60 @@
         border-radius: 6px;
         margin-right: 15px;
         font-size: 15px;
-    ">Download CV (PDF)</a>
-<!--
-    <a href="CoverLetter_Celso.pdf" download style="
-        background: #4a5568;
-        color: white;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 15px;
-    ">Download Cover Letter (PDF)</a>
--->
+    ">Download Curriculum Vitae (PDF)</a>
+
 </div>
-    
+
+    <!-- COVER LETTER SECTION -->
+    <section id="cover" class="section-card">
+        <h2>Cover Letter</h2>
+
+        <p>Dear Mistral Team,</p>
+
+<p>I am applying for the Systems Engineer position focused on infrastructure and large-scale Linux environments. My background is in computational science, but my day-to-day work revolves around executing, optimizing, and troubleshooting compute-intensive jobs on HPC systems, closely matching the challenges described in this role.</p>
+
+<p>At Universidad Autónoma de Madrid, I work extensively with large-scale Linux clusters, including Tier-0 infrastructure such as MareNostrum 5 at the Barcelona Supercomputing Center. I regularly submit and monitor jobs through SLURM, diagnose failures, and improve performance and resource efficiency in multi-user environments. This has given me a strong practical understanding of how applications interact with underlying systems, particularly regarding scheduling, memory usage, and I/O behavior.</p>
+
+<p>A central part of my work is improving the efficiency and reliability of computational workflows. I automate execution processes using Python, Fortran, and Bash, optimize parallel applications with MPI and OpenMP, and resolve issues related to software environments and dependencies. This requires not only technical problem-solving, but also close collaboration with researchers and HPC support teams to align computational demands with infrastructure constraints.</p>
+
+<p>My experience working under real constraints in shared HPC environments, debugging complex issues and improving efficiency, has naturally driven my interest toward roles at the intersection of users and infrastructure, where performance, reliability, and system-level thinking are essential. In this regard, Mistral’s focus on large-scale AI infrastructure makes it an ideal environment for this transition from scientific computing to production systems, and the kind of place where I am keen to continue developing my career.</p>
+
+<p>Thank you for your consideration.</p>
+
+<p>Best regards,</p>
+
+<p>Celso Manuel González Collado</p>
+
+    </section>
+
     <!-- CV SECTION -->
     <section id="cv" class="section-card">
         <h2>Curriculum Vitae</h2>
 
         <h3>Summary</h3>
-        <p>Physicist and computacional scientist with experience in Python, Fortran, Linux, Shell Scripting, MATLAB, git, and high-performance computing (HPC), with a strong problem-solving mindset through analytical and critical thinking. Over the past years, I have developed numerical models, complex simulations, and data analysis workflows in advanced scientific environments. I have experience leading projects and collaborating in international teams across multiple disciplines.</p>
+        <p>HPC engineer and computational scientist with strong experience in Linux-based HPC environments and large-scale cluster computing. Proven ability to optimize and automate production workloads across distributed systems using SLURM, Python, and Bash. Experienced in performance tuning, troubleshooting, and supporting scientific workloads at scale, including Tier-0 supercomputers such as MareNostrum 5 and institutional clusters. Skilled at bridging research and infrastructure teams, improving resource utilization and building efficient computational workflows in multi-user environments.</p>
 
         <h3>Professional Experience</h3>
-        <h3>PhD Researcher in Computational Modelling  
-        <br>Universidad Autónoma de Madrid (UAM) — 2021 – Present</h3>
+        <h3 style="text-align: right;">HPC Engineer / Computational Scientist
+        <br style="text-align: right;">Universidad Autónoma de Madrid (UAM) — February 2021 – Present</h3>
 
         <ul class="word-bullets">
-            <li>Development of cutting-edge simulations in optical and molecular physics, executed on world-class supercomputers and clusters like MareNostrum 5 (BSC) and the Scientific Computing Center at UAM.</li>
-
-            <li>Strong use of Linux environments and communication protocols like ssh and scp, as well as essential HPC tools such as SLURM, module management (Lmod), parallelization libraries (MPI, OpenMP), following the best practices like using SCRATCH for heavy workloads.</li>
-
-            <li>Development of scientific software in collaboration with Stanford University, including a 3‑month research stay at Stanford (California, USA) working with physicists, chemists and software engineers.</li>
-
-            <li>Programming in Python, MATLAB, Shell Scripting, and Fortran for data analysis, automation, modelling and code optimization for HPC. Use of Git for version control.</li>
-
-            <li>Publication of scientific articles and oral presentations at international conferences in Vigo (Spain) and Washington (USA), where I was awarded by the American Physical Society for participation in APS DAMOP 2023. Experience in project management and planning.</li>
-
-            <li>Teaching of multiple subjects in both Physics and Chemistry degrees at UAM, including Computational Tools for Chemists, Optics and Laboratory of Physical Chemistry.</li>
+            <li>Work extensively with large-scale Linux HPC environments, including Tier-0 systems such as MareNostrum 5 (Barcelona Supercomputing Center), executing and optimizing compute-intensive jobs in multi-user settings. Regularly submit, monitor, and troubleshoot jobs using SLURM, addressing issues related to resource allocation, runtime failures, and software environments.</li>
+            <li>Focus on improving performance and resource utilization through workload tuning, efficient job configuration, and parallelization techniques (MPI, OpenMP). Experience identifying bottlenecks in CPU, memory, and I/O usage, and adapting execution strategies accordingly in data-intensive scenarios.</li>
+            <li>Develop and maintain automation scripts in Python, Fortran and Bash to streamline computational workflows, improve reproducibility, and reduce manual intervention in job execution and data processing. Comfortable working with environment modules (Lmod) to configure and debug software dependencies across shared systems.</li>
+            <li>Operate in collaborative HPC environments, working closely with researchers and HPC support teams to align computational workloads with infrastructure constraints and best practices (e.g., SCRATCH usage, job sizing, and storage considerations).</li>
+            <li>Development of scientific software in collaboration with Stanford University, including a three-month research stay in California (USA), working alongside an interdisciplinary team.</li>
+            <li>Author of high-impact scientific publications and presenter at international conferences in Vigo (Spain) and Washington (USA), where I was awarded by the American Physical Society for participation in APS DAMOP 2023. Experience in project management and planning.</li>
         </ul>
 
         <h3>Technical Skills</h3>
         <ul>
-            <li><strong>Programming:</strong> Python, Shell Script, Fortran, MATLAB</li>
-            <li><strong>Technologies:</strong> Linux, HPC, Git, LaTeX, VSCode</li>
-            <li><strong>Expertise:</strong> Modelling, simulation, data analysis, optimization</li>
-            <li><strong>Languages:</strong> Spanish (Native), English (Advanced)</li>
+            <li><strong>Systems & HPC:</strong> Linux (HPC clusters), job scheduling (SLURM), remote systems access (SSH, SCP), environment management (Lmod), distributed computing (MPI), shared memory parallelism (OpenMP), containers (Docker)</li>
+            <li><strong>Programming & Automation:</strong> Python (NumPy, SciPy, Pandas), Bash/ Shell Scripting, Fortran, MATLAB, Git (version control), VSCode</li>
+            <li><strong>Cybersecurity & Networking (foundations):</strong> OpenSSL, secure protocols (TLS, HTTPS), cryptographic algorithms (AES, RSA, DH, SHA-256), digital certificates and PKI</li>
+            <li><strong>Core Competencies:</strong> job execution and troubleshooting in Linux HPC environments, performance optimization and efficient resource usage for parallel workloads, automation of computational workflows, cross-functional collaboration (research + infrastructure), problem-solving in large-scale, complex systems</li>
+            <li><strong>Languages:</strong> English: Advanced / Spanish: Native</li>
+            
         </ul>
 
         <h3>Scientific Publications</h3>
@@ -206,37 +232,26 @@
         </ul>
     </section>
 
-    <!-- COVER LETTER SECTION -->
-    <section id="cover" class="section-card">
-        <h2>Cover Letter</h2>
-
-        <p>....................................................................................................................</p>
-        <p>....................................................................................................................</p>
-        <p>....................................................................................................................</p>
-        <p>....................................................................................................................</p>
-        <p>....................................................................................................................</p>
-    </section>
-
     <!-- DEGREES SECTION -->
     <section id="degrees" class="section-card">
-        <h2>Degrees</h2>
+        <h2>Education</h2>
 
         <ul>
-            <li><strong>PhD in Theoretical Chemistry and Computational Modelling</strong>, UAM (June 2026)</li>
-            <li><strong>Master’s Degree in Theoretical Physics</strong>, UCM — Score: 9.39/10 (2020)</li>
-            <li><strong>Bachelor’s Degree in Physics</strong>, UCM — Score: 9.22/10 (2019)</li>
-            <li><strong>Professional Music Degree (Oboe)</strong>, Conservatorio Joaquín Turina (2015)</li>
+            <li><strong>PhD in Theoretical Chemistry and Computational Modelling  </strong>, Universidad Autónoma de Madrid (Expected June 2026)</li>
+            <li><strong>Master’s Degree in Theoretical Physics </strong>, Universidad Complutense de Madrid (2020) — Score: 9.39/10</li>
+            <li><strong>Bachelor’s Degree in Physics </strong>, Universidad Complutense de Madrid (2019) — Score: 9.22/10</li>
+            <li><strong>Professional music degree (Oboe)</strong>, Conservatorio Joaquín Turina de Madrid (2015)</li>
         </ul>
     </section>
 
     <!-- CERTIFICATIONS SECTION -->
     <section id="certifications" class="section-card">
-        <h2>Training in Cryptology & Cybersecurity</h2>
+        <h2>Certificados</h2>
 
         <ul>
-            <li>Courses completed in modern cryptography, secure communications, and applied cybersecurity.</li>
-            <li>Strong interest in cryptanalysis, secure protocol design, and software security.</li>
-            <li>Ongoing self‑development in cryptographic algorithms, number theory foundations, and secure coding practices.</li>
+            <li>Encryption and Cryptography Essentials, IBM (2026)</li>
+            <li>M2D School on High-Performance Multilayer Molecular Dynamics Approaches, UAM (2022)</li>
+            <li>European School “Quantum and Mixed Quantum Classical Dynamics in Photochemistry”, ZCAM-Zaragoza (2022)</li>
         </ul>
     </section>
 
